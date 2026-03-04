@@ -1,0 +1,13 @@
+DirectoryIndex index.php index.html
+
+<IfModule mod_negotiation.c>
+	# Prevent Apache from trying to match files using content negotiation
+	Options -MultiViews
+</IfModule>
+
+# Optional: enable this if you want all requests to be handled by index.php (single-page app behavior)
+# Make sure AllowOverride allows RewriteEngine in your Apache config before enabling.
+# RewriteEngine On
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^ index.php [L]
